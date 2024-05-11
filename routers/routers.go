@@ -40,5 +40,9 @@ func NewRouter() *gin.Engine {
 	authRoutes.POST("/register", controllers.Register)
 	authRoutes.POST("/login", controllers.Login)
 
+	cardRoutes := v1Routes.Group("/gift-card")
+	cardRoutes.POST("/create", controllers.CreateGiftCard)
+	cardRoutes.POST("/redeem", controllers.RedeemGiftCard)
+
 	return r
 }

@@ -31,18 +31,12 @@ func Register(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"status": "failed", "message": "invalid input", "error": err.Error()})
 		return
 	}
-
-	if input.Role != "shipper" && input.Role != "driver" && input.Role != "admin" && input.Role != "care" && input.Role != "fleet_managr" {
-		c.JSON(http.StatusBadRequest, gin.H{"status": "failed", "message": "invalid role", "error": "invalid role"})
-		return
-	}
-
 	user := models.User{
 		FullName: input.FullName,
 		Email:    input.Email,
 		Phone:    input.PhoneNumber,
 		Password: input.Password,
-		Role:     input.Role,
+		Role:     "user",
 	}
 
 	savedUser, err := user.Save()
@@ -54,11 +48,6 @@ func Register(c *gin.Context) {
 		}
 		log.Println(err)
 		c.JSON(http.StatusInternalServerError, gin.H{"status": "failed", "message": "unexpected error, please try again later", "error": err.Error()})
-		return
-	}
-
-	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 
