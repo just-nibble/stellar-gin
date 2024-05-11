@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"strings"
 
-	"bitgifty.com/stellar/database"
-	"bitgifty.com/stellar/helpers"
-	"bitgifty.com/stellar/models"
-	"bitgifty.com/stellar/pkg"
 	"github.com/gin-gonic/gin"
+	"github.com/just-nibble/stellar-gin/database"
+	"github.com/just-nibble/stellar-gin/helpers"
+	"github.com/just-nibble/stellar-gin/models"
+	"github.com/just-nibble/stellar-gin/pkg"
 )
 
 const DEST = ""

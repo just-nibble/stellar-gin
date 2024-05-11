@@ -1,4 +1,4 @@
-module bitgifty.com/stellar
+module github.com/just-nibble/stellar-gin
 
 go 1.22.2
 

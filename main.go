@@ -12,8 +12,8 @@ import (
 	"syscall"
 	"time"
 
-	"bitgifty.com/stellar/database"
-	"bitgifty.com/stellar/routers"
+	"github.com/just-nibble/stellar-gin/database"
+	"github.com/just-nibble/stellar-gin/routers"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"

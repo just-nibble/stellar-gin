@@ -3,7 +3,7 @@ package models
 import (
 	"errors"
 
-	"bitgifty.com/stellar/database"
+	"github.com/just-nibble/stellar-gin/database"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 )

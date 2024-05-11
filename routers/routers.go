@@ -4,9 +4,9 @@ import (
 	"io"
 	"os"
 
-	"bitgifty.com/stellar/controllers"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/just-nibble/stellar-gin/controllers"
 )
 
 var f, _ = os.Create("gin.log")

@@ -1,7 +1,7 @@
 package models
 
 import (
-	"bitgifty.com/stellar/database"
+	"github.com/just-nibble/stellar-gin/database"
 	"gorm.io/gorm"
 )
 

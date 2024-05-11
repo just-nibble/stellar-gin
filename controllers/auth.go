@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"bitgifty.com/stellar/helpers"
-	"bitgifty.com/stellar/models"
 	"github.com/gin-gonic/gin"
+	"github.com/just-nibble/stellar-gin/helpers"
+	"github.com/just-nibble/stellar-gin/models"
 )
 
 type AuthenticationInput struct {

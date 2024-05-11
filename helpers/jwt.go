@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"bitgifty.com/stellar/models"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
+	"github.com/just-nibble/stellar-gin/models"
 )
 
 func loadEnv() {

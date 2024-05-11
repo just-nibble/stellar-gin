@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"bitgifty.com/stellar/helpers"
 	"github.com/gin-gonic/gin"
+	"github.com/just-nibble/stellar-gin/helpers"
 )
 
 func JWTAuthMiddleware() gin.HandlerFunc {
